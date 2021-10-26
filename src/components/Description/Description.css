@@ -1,0 +1,24 @@
+.blog-container{
+    width: 50%;
+    margin: 2em auto;
+}
+
+.blog-homeLink{
+    color: #000;
+}
+.blog-description{
+    font-size: 20px;
+    color:#617d98;
+    padding: 0px 15px;
+    text-align: justify;
+}
+.blog-price{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.blog-card{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

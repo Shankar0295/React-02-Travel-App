@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Card.css'
 
+//For display cards 
 const Card = ({ tours, removeTour }) => {
     return (
         <div>
@@ -18,7 +20,7 @@ const Card = ({ tours, removeTour }) => {
                                 </div>
                                 <p className="s-description">
                                     {item.info.substring(0, 50)}...
-                                <Link className="read-more" to={item.id}>Read More</Link>
+                                    <Link className="read-more" to={{ pathname: `${item.id}`, state: { ...item } }}>Read More</Link>
                                 </p>
                                 <button className="delete-btn" onClick={() => removeTour(item.id)}>
                                     Not Interested
