@@ -1,0 +1,92 @@
+.underline{
+    width: 6rem;
+      height: .25rem;
+      background: #49a6e9;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+  }
+  .container{
+    width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  
+  }
+  
+  .card-grid{
+    display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      grid-gap: 30px;
+      /* justify-items: center;
+      align-items: center; */
+  }
+  
+  img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: var(--b-radius);
+      border-top-right-radius: var(--b-radius);
+  }
+  
+  .tour-card{
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+    border-radius: var(--b-radius);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+    justify-content: space-between;
+  }
+  
+  .tour-card:hover{
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+  }
+  
+  .price{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--f-size);
+    padding: 0px 15px;
+  
+  }
+  
+  .tour-price{
+    background: #ebf7ff
+  }
+  
+  .read-more {
+    font-size: var(--f-size);
+    font-weight: 400;
+    color: #49a6e9;;
+  }
+  
+  .s-description{
+    font-size: var(--f-size);
+    color:#617d98;
+    padding: 0px 15px;
+  }
+  
+  .delete-btn{
+    color: #bb2525;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid #bb2525;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    align-self: center;
+    padding: .35rem;
+  }
+  
+  .refresh-btn{
+    color: #ffffff;
+    margin-bottom: 10px;
+    background: #49a6e9;
+    border: 1px solid #49a6e9;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 130px;
+    padding: .35rem;
+    font-size: 20px;
+  }
