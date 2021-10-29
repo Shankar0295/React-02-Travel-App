@@ -3,11 +3,13 @@ import Card from '../Card/Card';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Loading from '../Loading/Loading';
+import useFetch from '../../Hooks/useFetch'
 import './Home.css'
 
 const Home = () => {
     const url = 'https://tours-api-trial.herokuapp.com/tours';//api url
-
+    const { toursData } = useFetch(url)
+    console.log(toursData, "useFetch")
     //hooks for loading and storing api response
     const [tours, setTours] = useState([]);
     const [loading, setLoading] = useState(true)
